@@ -1,5 +1,5 @@
-calories_str = """
-"""
+from pathlib import Path
+calories_str = (Path(__file__).parent / Path("input.txt")).read_text()
 
 calories_per_elf = []
 current_elf_calories = 0
@@ -13,4 +13,4 @@ for line in calories_str.split("\n"):
 
     current_elf_calories += int(line)
 
-print(max(calories_per_elf))
+print(sum(sorted(calories_per_elf, reverse=True)[:3]))
