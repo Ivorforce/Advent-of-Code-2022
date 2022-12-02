@@ -3,6 +3,9 @@ name = "iv-aoc-2022"
 version = "0.1.0"
 description = ""
 authors = ["Lukas Tenbrink <lukas.tenbrink@gmail.com>"]
+packages = [
+    { include = "ivorius", from = "src" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"

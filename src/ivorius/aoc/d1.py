@@ -1,5 +1,5 @@
 from pathlib import Path
-calories_str = (Path(__file__).parent / Path("input.txt")).read_text()
+calories_str = (Path(__file__).parent / Path("d1-input.txt")).read_text()
 
 calories_per_elf = []
 current_elf_calories = 0
